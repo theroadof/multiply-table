@@ -16,33 +16,24 @@ function isValid(start,end){
 }
 
 function generateAllLines(start,end){
-  var lines='';
+  var lines=[];
   for(let i=start;i<=end;i++){
-    if(i<end){
-      lines+=generateLine(start,i);
-      lines+='\n';
-    }else{
-      lines+=generateLine(start,i);
-    }
+    lines.push(generateLine(start,i));
   }
-  return lines;
+  return lines.join('\n');
 }
 
 function generateLine(start,end){
-  var line='';
+  var line=[];
   for(let i=start;i<=end;i++){
-    line+=generateExpression(i,end);
+    line.push(generateExpression(i,end));
   }
-  return line;
+  return line.join('\t');
 }
 
 function generateExpression(start,end){
   const expression = '*';
-  if(start===end){
-    return `${start}*${end}=${start*end}`;
-  }else{
-    return `${start}*${end}=${start*end}\t`;
-  }
+  return `${start}*${end}=${start*end}`;
 }
 
 module.exports = {
