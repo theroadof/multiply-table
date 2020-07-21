@@ -1,0 +1,29 @@
+function isValid:
+P: 3 min
+D: 2 min
+C: A simple judge function
+A: Use logical and program to decrease the codes
+
+function generateAllLines
+P: 5 min
+D: 5 min
+C: Wasted time on initialize return value and output format.
+A: Used array.join() to connect and format the return value. 
+
+function generateLine
+P: 10 min
+D: 15 min
+C: Wasted time on initialize return value and output format.
+A: Used array.join() to connect and format the return value.
+
+function generateExpression
+P: 5 min
+D: 4 min
+C: Wasted time on initialize return value and output format.
+A: Used array.join() to connect and format the return value.
+
+Total Task
+P: 45 min
+D: 26 min
+C: Wasted time on initialize return value and output format.
+A: Used array.join() to connect and format the return value.
